@@ -1,0 +1,325 @@
+:root {
+    --logo-main-color: #000;
+    --prim-bg-color: #fff;
+    --sec-bg-color: #f5f4fa;
+    --hero-bg-color: #2f303a;
+    --prim-text-color: #212121;
+    --sec-text-color: #757575;
+    --accent-color: #2196f3;
+    --hero-text-color: #fff;
+    --footer-sec-text-color: rgba(255, 255, 255, 0.6);
+    --footer-main-text-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    background-color: var(--prim-bg-color);
+    color: var(--prim-text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.semantic-list {
+    list-style: none;
+}
+.link-undecor {
+    text-decoration: none;
+}
+
+/* лого */
+.logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo-main-color);
+}
+.logo-blue {
+    color: var(--accent-color);
+}
+
+/* Навбар */
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-left: auto;
+}
+
+.navbar-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--prim-text-color);
+}
+
+.nav-links .item:not(:last-child) {
+    margin-right: 50px;
+}
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-contact:hover,
+.navbar-contact:focus,
+.active {
+    color: var(--accent-color);
+}
+.navbar-contact {
+    color: var(--sec-text-color);
+}
+
+/* Секция герой */
+
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--hero-bg-color);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+    letter-spacing: 0.06em;
+}
+.hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+
+/* Преимущества */
+.advantages {
+    display: flex;
+}
+.adv-item {
+    max-width: 270px;
+    margin-right: 30px;
+}
+.adv-item:last-child {
+    margin-right: 0;
+}
+.adv-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.adv-descript {
+    line-height: 1.71;
+    color: var(--sec-text-color);
+}
+
+/* Галерея */
+.gallery {
+    padding-top: 0;
+}
+.gallery-container,
+.team-container {
+    display: flex;
+    justify-content: center;
+}
+.gallery-container > .item:not(:last-child),
+.memb:not(:last-child) {
+    margin-right: 30px;
+}
+.gallery-title,
+.team-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Команда */
+.team {
+    background-color: var(--sec-bg-color);
+}
+.memb {
+    text-align: center;
+    background-color: var(--prim-bg-color);
+}
+.memb-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    line-height: 1.19;
+    font-size: 16px;
+    font-weight: 500;
+}
+.memb-position {
+    margin-bottom: 30px;
+
+    color: var(--sec-text-color);
+    line-height: 1.19;
+    font-size: 16px;
+}
+
+/* Футер */
+.footer {
+    background-color: var(--hero-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: var(--footer-main-text-color);
+}
+.adress {
+    font-style: normal;
+    line-height: 1.71;
+}
+.footer-address {
+    color: var(--footer-main-text-color);
+}
+.footer-contact {
+    color: var(--footer-sec-text-color);
+}
+.addr .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+/* ! Стр 2 */
+/* Проекты */
+.filter {
+    display: flex;
+    justify-content: center;
+}
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+.projects-btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--sec-bg-color);
+    color: var(--prim-text-color);
+}
+.projects-btn:hover,
+.projects-btn:focus,
+.projects-btn:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 50px;
+}
+.proj-item {
+    width: 370px;
+    margin: 15px;
+}
+.proj-descript-block {
+    display: block;
+    padding: 20px 24px;
+
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.proj-name {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--prim-text-color);
+}
+.proj-type {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--sec-text-color);
+}
