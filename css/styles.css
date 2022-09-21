@@ -283,7 +283,10 @@ ul {
     padding: 16px 32px 30px;
 }
 .net-icon-container {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 44px;
     text-align: center;
@@ -298,14 +301,16 @@ ul {
     background-color: var(--accent-color);
     fill: #fff;
 } */
-.net-icon-container:hover {
+.net-icon-container:hover,
+.net-icon-container:focus,
+.net-icon-container:hover .net-icon,
+.net-icon-container:hover .net-icon {
     background-color: var(--accent-color);
     fill: #fff;
 }
 .net-icon {
     height: 20px;
     width: 20px;
-    margin-top: 12px;
 
     fill: #afb1b8;
 }
