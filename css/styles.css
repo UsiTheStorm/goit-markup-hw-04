@@ -138,7 +138,6 @@ ul {
 .nav-icon {
     display: inline-block;
     fill: #757575;
-    /* margin-right: 10px; */
 }
 
 /* Секция герой */
@@ -147,11 +146,8 @@ ul {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--hero-bg-color);
-
-    /* background-size: 1600px; */
 }
 .hero-overlay {
-    /* background-color: rgba(47, 48, 58, 0.4); */
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
@@ -159,7 +155,6 @@ ul {
         url('../images/bg-hero-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .hero {
     display: flex;
@@ -207,16 +202,9 @@ ul {
 .adv-item:last-child {
     margin-right: 0;
 }
-/* .adv-item::before {
-    content: '';
-    display: block;
-    height: 120px;
-    background-color: #3616d5;
-    background-image: url('../images/icons.svg');
-} */
+
 .adv-icon-container {
     display: block;
-    /* justify-content: center; */
     margin-bottom: 30px;
     height: 120px;
 
@@ -224,7 +212,6 @@ ul {
     background-color: #f5f4fa;
 }
 .adv-icon {
-    /* display: inline-block; */
     width: 70px;
     height: 70px;
     margin: 25px 100px;
@@ -285,8 +272,6 @@ ul {
     font-weight: 500;
 }
 .memb-position {
-    /* margin-bottom: 30px; */
-
     color: var(--sec-text-color);
     line-height: 1.19;
     font-size: 16px;
@@ -297,7 +282,6 @@ ul {
     padding: 16px 32px 30px;
 }
 .net-icon-container {
-    /* display: inline-block; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,15 +290,8 @@ ul {
     text-align: center;
     background-color: var(--prim-bg-color);
     border-radius: 50%;
-    /* background-color: red; */
 }
-/* .net-icon-container:hover,
-.net-icon-container:focus,
-.cli-logo-container:hover,
-.cli-logo-container:focus {
-    background-color: var(--accent-color);
-    fill: #fff;
-} */
+
 .net-icon-container:hover,
 .net-icon-container:focus,
 .net-icon-container:hover .net-icon,
@@ -328,10 +305,6 @@ ul {
 
     fill: #afb1b8;
 }
-/* .net-icon:hover,
-.net-icon:focus {
-    fill: #fff;
-} */
 
 /*Постоянные клиенты */
 .clients {
@@ -351,7 +324,6 @@ ul {
 
 .cli-logo-container:hover,
 .cli-logo-container:focus {
-    /* background-color: var(--accent-color); */
     border-color: #2196f3;
     fill: #2196f3;
 }
@@ -369,20 +341,16 @@ ul {
 }
 .footer-blocks {
     display: flex;
-    /* margin-right: 20px; */
     align-items: baseline;
 }
 .footer-join {
     margin-left: 70px;
-    /* margin-top: 9px; */
 }
 .footer-net-icons {
     display: flex;
     gap: 10px;
 }
-/* .footer-net-icons > .item:not(:last-child) {
-    margin-right: 10px;
-} */
+
 .f-join-title {
     margin-bottom: 20px;
 
@@ -456,7 +424,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    /* margin-top: 50px; */
 }
 .proj-item {
     width: 370px;
