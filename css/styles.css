@@ -121,13 +121,24 @@ ul {
 }
 .navbar-link:hover,
 .navbar-link:focus,
-.navbar-contact:hover,
-.navbar-contact:focus,
+.navbar-contact:hover .nav-icon,
+.navbar-contact:focus .nav-icon,
 .active {
     color: var(--accent-color);
+    fill: #2196f3;
 }
 .navbar-contact {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+
     color: var(--sec-text-color);
+}
+
+.nav-icon {
+    display: inline-block;
+    fill: #757575;
+    /* margin-right: 10px; */
 }
 
 /* Секция герой */
@@ -261,6 +272,9 @@ ul {
 .memb {
     text-align: center;
     background-color: var(--prim-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .memb-name {
     margin-top: 30px;
@@ -337,8 +351,9 @@ ul {
 
 .cli-logo-container:hover,
 .cli-logo-container:focus {
-    background-color: var(--accent-color);
-    fill: #fff;
+    /* background-color: var(--accent-color); */
+    border-color: #2196f3;
+    fill: #2196f3;
 }
 .cli-icon {
     height: 60px;
@@ -355,12 +370,19 @@ ul {
 .footer-blocks {
     display: flex;
     /* margin-right: 20px; */
-    align-items: start;
+    align-items: baseline;
 }
 .footer-join {
     margin-left: 70px;
     /* margin-top: 9px; */
 }
+.footer-net-icons {
+    display: flex;
+    gap: 10px;
+}
+/* .footer-net-icons > .item:not(:last-child) {
+    margin-right: 10px;
+} */
 .f-join-title {
     margin-bottom: 20px;
 
@@ -370,14 +392,14 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.f-net-icon-container {
+.net-icon-container.ftr {
     background-color: var(--footer-icon-bg-color);
 }
-.f-net-icon-container:hover,
-.f-net-icon-container:focus {
+.net-icon-container.ftr:hover,
+.net-icon-container.ftr:focus {
     background-color: var(--accent-color);
 }
-.f-net-icon {
+.net-icon.ftr {
     fill: #fff;
 }
 .footer-logo {
@@ -404,6 +426,7 @@ ul {
 .filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -424,7 +447,8 @@ ul {
 .projects-btn:hover,
 .projects-btn:focus,
 .projects-btn:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--accent-color);
     color: var(--hero-text-color);
 }
@@ -432,11 +456,16 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .proj-item {
     width: 370px;
     margin: 15px;
+}
+.proj-item:hover,
+.proj-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .proj-descript-block {
     display: block;
