@@ -125,7 +125,7 @@ ul {
 .navbar-contact:focus .nav-icon,
 .active {
     color: var(--accent-color);
-    fill: #2196f3;
+    fill: currentColor;
 }
 .navbar-contact {
     display: flex;
@@ -137,7 +137,7 @@ ul {
 
 .nav-icon {
     display: inline-block;
-    fill: #757575;
+    fill: currentColor;
 }
 
 /* Секция герой */
