@@ -263,8 +263,10 @@ ul {
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.memb-sign-container {
+    padding: 30px 32px;
+}
 .memb-name {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     line-height: 1.19;
@@ -272,15 +274,17 @@ ul {
     font-weight: 500;
 }
 .memb-position {
+    margin-bottom: 16px;
+
     color: var(--sec-text-color);
     line-height: 1.19;
     font-size: 16px;
 }
 .memb-net-container {
     display: flex;
-    justify-content: space-between;
-    padding: 16px 32px 30px;
+    gap: 10px;
 }
+
 .net-icon-container {
     display: flex;
     justify-content: center;
@@ -314,7 +318,9 @@ ul {
     margin-right: 30px;
 }
 .cli-logo-container {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
@@ -330,7 +336,6 @@ ul {
 .cli-icon {
     height: 60px;
     width: 106px;
-    margin: 16px 32px;
 }
 
 /* Футер */
@@ -430,7 +435,9 @@ ul {
     margin: 15px;
 }
 .proj-item:hover,
-.proj-item:focus {
+.proj-item:focus,
+.proj-item > .link:hover,
+.proj-item > .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
