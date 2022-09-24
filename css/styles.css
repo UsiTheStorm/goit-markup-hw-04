@@ -94,14 +94,11 @@ ul {
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .nav-links {
     display: flex;
-    justify-content: flex-start;
-
     margin-left: auto;
 }
 
@@ -129,7 +126,7 @@ ul {
 }
 .navbar-contact {
     display: flex;
-    align-content: center;
+    align-items: center;
     gap: 10px;
 
     color: var(--sec-text-color);
@@ -204,7 +201,9 @@ ul {
 }
 
 .adv-icon-container {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     height: 120px;
 
@@ -214,7 +213,7 @@ ul {
 .adv-icon {
     width: 70px;
     height: 70px;
-    margin: 25px 100px;
+    /* margin: 25px 100px; */
 }
 .adv-title {
     margin-bottom: 10px;
@@ -434,8 +433,10 @@ ul {
     width: 370px;
     margin: 15px;
 }
-.proj-item:hover,
-.proj-item:focus,
+.proj-item > .link {
+    display: block;
+}
+
 .proj-item > .link:hover,
 .proj-item > .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
